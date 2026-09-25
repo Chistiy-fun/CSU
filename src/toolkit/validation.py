@@ -28,7 +28,7 @@ def validate(tokens: list[str]) -> tuple[list[float], list[str]]:
         except ValueError as error:
             raise ToolkitErrors("Неверное числовое значение") from error
         if not math.isfinite(number):
-            raise ToolkitErrors("Число должно быть конечны")
+            raise ToolkitErrors("Результат слишком большой")
         numbers.append(number)
         position += 1
 

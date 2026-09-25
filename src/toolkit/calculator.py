@@ -7,7 +7,7 @@ from toolkit.validation import validate
 
 
 def calculate_values(numbers: list[float], operators: list[str]) -> float:
-    """Вычислить проверенные данные, сначала выполняя умножение и деление."""
+    """Вычислить"""
     total = 0.0
     term = numbers[0]
     for index, operator in enumerate(operators):
